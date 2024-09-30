@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1727697260 source:d:\deep_learn\mnist_c\mnist_c\main.c
+	<stdio.h>
+	<stdlib.h>
+	"WEIGHTS.h"
+
+1727697336 d:\deep_learn\mnist_c\mnist_c\weights.h
+
