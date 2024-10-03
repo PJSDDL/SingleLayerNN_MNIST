@@ -23,7 +23,7 @@ void printMNIST(float MNIST[], int height)
     }
 }
 
-//µ¥²ãÉñ¾­ÍøÂç£¬ÊäÈë16*16¾ØÕó£¬Êä³ö10ÖÖÊı×Ö·ÖÀà
+//å•å±‚ç¥ç»ç½‘ç»œï¼Œè¾“å…¥16*16çŸ©é˜µï¼Œè¾“å‡º10ç§æ•°å­—åˆ†ç±»
 int SingleLayerNN(float MNIST[], float W[], int height, float b[], int num)
 {
     float labels[10];
@@ -53,7 +53,8 @@ int SingleLayerNN(float MNIST[], float W[], int height, float b[], int num)
         }
     }
 
-    printf("index_max: %d \n", index_max);
+    labels[index] -= b[index];
+    printf("%f ", labels[index]);
     return index_max;
 }
 
